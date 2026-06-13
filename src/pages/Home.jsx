@@ -150,6 +150,9 @@ function Home() {
             <a className="secondary-button" href="#promotions">
               Voir les promotions
             </a>
+            <a className="secondary-button" href="#promotions">
+              Consulter le Blog
+            </a>
           </div>
         </div>
 

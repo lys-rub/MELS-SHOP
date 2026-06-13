@@ -1,16 +1,26 @@
-# React + Vite
+# MEL'S Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site e-commerce professionnel construit avec Next.js, Tailwind CSS et une API produits.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. `npm install`
+2. `npm run dev`
 
-## React Compiler
+## Structure principale
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `src/app/` : pages et application Next.js
+- `src/components/` : composants partagés
+- `src/lib/shop-data.js` : données de produits, catégories et collections
+- `src/app/api/products/route.js` : route API pour récupérer les produits
 
-## Expanding the ESLint configuration
+## Commandes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `npm run dev` : démarre le serveur de développement
+- `npm run build` : construit l'application
+- `npm run start` : lance le serveur de production
+- `npm run lint` : vérifie les règles ESLint
+
+## Notes
+
+Ce projet met en valeur une expérience e-commerce moderne avec un design soigné, des pages de boutique, collection, contact et panier.

@@ -13,12 +13,10 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-white/80 bg-white/90 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <Link href="/" className="flex items-center gap-3">
-          <div className="relative h-10 w-10 overflow-hidden rounded-2xl bg-brand-500/10 p-1">
-            <Image src={logo} alt="MEL'S" fill className="object-contain" />
-          </div>
+        <Link href="/" className="flex items-center gap-4">
+          <Image src={logo} alt="MEL'S" width={64} height={64} className="object-contain" />
           <div>
-            <p className="text-sm font-semibold tracking-[0.18em] text-brand-700">MEL&#39;S</p>
+            <p className="text-base font-semibold tracking-[0.12em] text-brand-700">MEL&#39;S</p>
             <span className="text-xs uppercase text-brand-500">Mode & Beauté</span>
           </div>
         </Link>

@@ -55,9 +55,15 @@ function IconHeart(props) {
     </svg>
   )
 }
-
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
+
+  const actions = [
+    { href: '/contact', aria: 'Contactez-nous', Icon: IconContact },
+    { href: '/account', aria: 'Mon compte', Icon: IconUser },
+    { href: '/favorites', aria: 'Mes favoris', Icon: IconHeart },
+    { href: '/cart', aria: 'Voir le panier', Icon: IconCart },
+  ]
 
   return (
     <header className="sticky top-0 z-40 border-b border-white/80 bg-white/90 backdrop-blur-xl">
@@ -80,21 +86,16 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <Link href="/contact" aria-label="Contactez-nous" className="inline-flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-700 transition hover:border-brand-300">
-              <IconContact className="h-5 w-5" />
-            </Link>
-
-            <Link href="/account" aria-label="Mon compte" className="inline-flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-700 transition hover:border-brand-300">
-              <IconUser className="h-5 w-5" />
-            </Link>
-
-            <Link href="/favorites" aria-label="Mes favoris" className="inline-flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-700 transition hover:border-brand-300">
-              <IconHeart className="h-5 w-5" />
-            </Link>
-
-            <Link href="/cart" aria-label="Voir le panier" className="inline-flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-700 transition hover:border-brand-300">
-              <IconCart className="h-5 w-5" />
-            </Link>
+            {actions.map((a) => (
+              <Link
+                key={a.href}
+                href={a.href}
+                aria-label={a.aria}
+                className="inline-flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-700 transition hover:border-brand-300"
+              >
+                <a.Icon className="h-5 w-5" />
+              </Link>
+            ))}
 
             <button
               type="button"

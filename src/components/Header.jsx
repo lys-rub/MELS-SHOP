@@ -6,7 +6,7 @@ import { useState } from 'react'
 import logo from '../assets/mels-logo.png'
 
 const navItems = [
-  { label: 'Boutique', href: '/shop' },
+  { label: 'Categories', href: '/shop' },
   { label: 'Collections', href: '/collections' },
   { label: 'À propos', href: '/about' },
   { label: 'Contact', href: '/contact' },
@@ -36,30 +36,30 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-white/80 bg-white/90 backdrop-blur-xl">
-      <div className="mx-auto flex flex-wrap items-center justify-between gap-3 px-4 py-3 lg:flex-nowrap lg:px-8 max-w-7xl">
+      <div className="mx-auto flex items-center justify-between gap-3 px-4 py-3 lg:flex-nowrap lg:px-8 max-w-7xl">
         <Link href="/" className="flex items-center gap-3">
-          <Image src={logo} alt="MEL'S" width={96} height={96} className="object-contain" />
-          <div>
-            <p className="text-lg font-semibold tracking-[0.12em] text-brand-700">MEL&#39;S</p>
-            <span className="text-xs uppercase text-brand-500">Mode & Beauté</span>
-          </div>
+          <Image src={logo} alt="MEL'S" width={128} height={128} className="object-contain w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28" />
         </Link>
 
         <div className="flex items-center gap-2">
           <nav className="hidden items-center gap-6 lg:flex">
             {navItems.map((item) => (
-              <Link key={item.href} href={item.href} className="text-sm font-medium text-slate-700 transition hover:text-brand-700">
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`text-sm ${item.label === 'Categories' ? 'font-bold' : 'font-medium'} text-slate-700 transition hover:text-brand-700`}
+              >
                 {item.label}
               </Link>
             ))}
           </nav>
 
           <div className="flex items-center gap-2">
-            <Link href="/cart" aria-label="Voir le panier" className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-700 transition hover:border-brand-300">
+            <Link href="/cart" aria-label="Voir le panier" className="inline-flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-700 transition hover:border-brand-300">
               <IconCart className="h-5 w-5" />
             </Link>
 
-            <Link href="/shop" aria-label="Aller à la boutique" className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-700 transition hover:border-brand-300">
+            <Link href="/shop" aria-label="Aller à la boutique" className="inline-flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-700 transition hover:border-brand-300">
               <IconShop className="h-5 w-5" />
             </Link>
 
@@ -67,7 +67,7 @@ export default function Header() {
               type="button"
               aria-label="Ouvrir le menu"
               onClick={() => setMenuOpen((current) => !current)}
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-700 transition hover:border-brand-300 lg:hidden"
+              className="inline-flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-700 transition hover:border-brand-300 lg:hidden"
             >
               <span className="sr-only">Menu</span>
               <span aria-hidden>{menuOpen ? '×' : '☰'}</span>

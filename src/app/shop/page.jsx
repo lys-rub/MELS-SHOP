@@ -18,7 +18,7 @@ export default function ShopPage() {
 
   return (
     <section className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(200,79,66,0.12),_transparent_32%),_linear-gradient(180deg,_rgba(255,250,246,1)_0%,_rgba(246,239,232,1)_100%)] py-16">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 grid gap-8 lg:grid-cols-[1.25fr_0.75fr] lg:items-end">
           <div>
             <p className="text-sm uppercase tracking-[0.3em] text-brand-500">Boutique</p>
@@ -64,7 +64,7 @@ export default function ShopPage() {
           </div>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {filteredProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}

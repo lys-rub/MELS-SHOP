@@ -10,10 +10,10 @@ export default function FavoritesPage() {
           Retrouvez tous les articles que vous avez mis en favoris pour une consultation ultérieure.
         </p>
 
-        <div className="mt-12 rounded-[2rem] border border-slate-200 bg-slate-50 p-10 text-center shadow-soft">
-          <p className="text-slate-600">Vous n'avez pas encore d'articles en favoris.</p>
-          <p className="mt-2 text-sm text-slate-500">Commencez à explorer notre boutique et ajoutez vos produits préférés.</p>
-          <a href="/shop" className="mt-6 inline-flex items-center justify-center rounded-full bg-brand-600 px-6 py-4 text-sm font-semibold text-white transition hover:bg-brand-700">
+        <div className="mt-12 rounded-[2rem] border border-slate-200 bg-brand-50/80 p-10 text-center shadow-soft">
+          <p className="text-slate-700 font-medium">Vous n'avez pas encore d'articles en favoris.</p>
+          <p className="mt-2 text-sm text-slate-600">Commencez à explorer notre boutique et ajoutez vos produits préférés.</p>
+          <a href="/shop" className="mt-8 inline-flex items-center justify-center rounded-full bg-brand-500 px-8 py-4 text-base font-semibold text-white transition hover:bg-brand-600 shadow-md hover:shadow-lg">
             Découvrir la boutique
           </a>
         </div>

@@ -80,19 +80,19 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <Link href="/contact" aria-label="Contactez-nous" className="inline-flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-700 transition hover:border-brand-300">
+            <Link href="/contact" aria-label="Contactez-nous" className="inline-flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-500 transition hover:border-brand-400 hover:text-brand-600">
               <IconContact className="h-5 w-5" />
             </Link>
 
-            <Link href="/account" aria-label="Mon compte" className="inline-flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-700 transition hover:border-brand-300">
+            <Link href="/account" aria-label="Mon compte" className="inline-flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-500 transition hover:border-brand-400 hover:text-brand-600">
               <IconUser className="h-5 w-5" />
             </Link>
 
-            <Link href="/favorites" aria-label="Mes favoris" className="inline-flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-700 transition hover:border-brand-300">
+            <Link href="/favorites" aria-label="Mes favoris" className="inline-flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-500 transition hover:border-brand-400 hover:text-brand-600">
               <IconHeart className="h-5 w-5" />
             </Link>
 
-            <Link href="/cart" aria-label="Voir le panier" className="inline-flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-700 transition hover:border-brand-300">
+            <Link href="/cart" aria-label="Voir le panier" className="inline-flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-500 transition hover:border-brand-400 hover:text-brand-600">
               <IconCart className="h-5 w-5" />
             </Link>
 
@@ -100,7 +100,7 @@ export default function Header() {
               type="button"
               aria-label="Ouvrir le menu"
               onClick={() => setMenuOpen((current) => !current)}
-              className="inline-flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-700 transition hover:border-brand-300 lg:hidden"
+              className="inline-flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-500 transition hover:border-brand-400 hover:text-brand-600 lg:hidden"
             >
               <span className="sr-only">Menu</span>
               <span aria-hidden>{menuOpen ? '×' : '☰'}</span>

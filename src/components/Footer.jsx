@@ -28,8 +28,8 @@ export default function Footer() {
           </div>
           <div>
             <p className="text-sm font-semibold text-slate-900">Contact</p>
-            <p className="mt-3 text-sm text-slate-600">hello@mels-shop.com</p>
-            <p className="text-sm text-slate-600">+243 99 999 9999</p>
+            <p className="mt-3 text-sm text-slate-600">mels4entreprise@gmail.com</p>
+            <p className="text-sm text-slate-600">+243979341078</p>
           </div>
         </div>
       </div>

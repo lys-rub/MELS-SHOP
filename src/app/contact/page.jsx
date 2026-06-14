@@ -16,7 +16,7 @@ export default function ContactPage() {
           <div className="rounded-[2rem] border border-slate-200 bg-brand-50/80 p-10 shadow-soft">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-600">Contactez-nous</p>
             <p className="mt-4 text-sm leading-7 text-slate-700">
-              hello@mels-shop.com<br />+243 99 999 9999
+              mels4entreprise@gmail.com<br />+243979341078
             </p>
             <div className="mt-8 space-y-4 text-sm text-slate-600">
               <p>Horaires : Lun–Ven 9h–18h</p>

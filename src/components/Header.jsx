@@ -78,7 +78,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-sm ${item.bold ? 'font-bold' : 'font-medium'} text-slate-700 transition hover:text-brand-700`}
+                className={`text-sm ${item.bold ? 'font-bold' : 'font-medium'} text-brand-700 transition hover:text-brand-900`}
               >
                 {item.label}
               </Link>
@@ -91,7 +91,7 @@ export default function Header() {
                 key={a.href}
                 href={a.href}
                 aria-label={a.aria}
-                className="inline-flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-700 transition hover:border-brand-300"
+                className="inline-flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-brand-100 bg-white text-brand-700 transition hover:border-brand-300"
               >
                 <a.Icon className="h-5 w-5" />
               </Link>

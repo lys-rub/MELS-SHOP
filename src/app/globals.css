@@ -7,7 +7,7 @@
 :root {
   color-scheme: light;
   font-family: 'Montserrat', system-ui, sans-serif;
-  background-color: #fffaf6;
+  background-color: #F6F5F2;
 }
 
 html {
@@ -20,9 +20,9 @@ body {
   min-height: 100vh;
   width: 100%;
   overflow-x: hidden;
-  background: radial-gradient(circle at top, rgba(232, 171, 146, 0.14), transparent 35%),
-    linear-gradient(180deg, #fffdfb 0%, #f6efe8 100%);
-  color: #1f1b18;
+  background: radial-gradient(circle at top, rgba(75, 140, 166, 0.12), transparent 30%),
+    linear-gradient(180deg, #f8f5f0 0%, #eef1f4 100%);
+  color: #132832;
 }
 
 * {
@@ -38,7 +38,7 @@ select {
 }
 
 a {
-  color: #7c2d27; /* brand-700 to match logo */
+  color: #244F63;
   text-decoration: none;
 }
 

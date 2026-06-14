@@ -21,7 +21,7 @@ export default function ShopPage() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 grid gap-8 lg:grid-cols-[1.25fr_0.75fr] lg:items-end">
           <div>
-            <p className="text-sm uppercase tracking-[0.3em] text-brand-500">Boutique</p>
+            <p className="text-sm uppercase tracking-[0.3em] text-brand-600">Boutique</p>
             <h1 className="mt-4 max-w-2xl text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
               Parcourez une sélection raffinée de mode, beauté et accessoires.
             </h1>
@@ -30,7 +30,7 @@ export default function ShopPage() {
             </p>
           </div>
 
-          <div className="rounded-[2rem] border border-white/80 bg-white/90 p-8 shadow-soft">
+            <div className="rounded-[2rem] border border-brand-100 bg-surface p-8 shadow-soft">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">Trouvez votre nouvelle pièce</p>
             <div className="mt-6 space-y-4">
               <label className="block text-sm font-medium text-slate-700">Rechercher</label>
@@ -64,7 +64,7 @@ export default function ShopPage() {
           </div>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {filteredProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}

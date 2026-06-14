@@ -31,11 +31,11 @@ export default function HomePage() {
       <div className="mx-auto max-w-7xl px-4 pb-16 pt-10 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="space-y-8">
-            <span className="inline-flex rounded-full bg-brand-50 px-4 py-1 text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">
+            <span className="inline-flex rounded-full bg-brand-100 px-4 py-1 text-sm font-semibold uppercase tracking-[0.22em] text-brand-700 shadow-sm">
               Nouvelle collection
             </span>
             <div className="space-y-6">
-              <p className="text-sm uppercase tracking-[0.3em] text-brand-500">MEL'S Boutique</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-brand-600">MEL'S Boutique</p>
               <h1 className="max-w-3xl text-3xl font-semibold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
                 L&apos;éclat de la mode et de la beauté, livré avec élégance.
               </h1>
@@ -48,7 +48,7 @@ export default function HomePage() {
               <Link href="/shop" className="brand-button w-full text-center sm:w-auto">
                 Explorer la boutique
               </Link>
-              <Link href="/collections" className="inline-flex items-center justify-center rounded-full border border-brand-200 bg-white px-6 py-3 text-sm font-semibold text-brand-700 transition hover:bg-brand-50">
+              <Link href="/collections" className="inline-flex items-center justify-center rounded-full border border-brand-200 bg-white px-6 py-3 text-sm font-semibold text-brand-700 transition hover:bg-brand-100 shadow-sm">
                 Voir les collections
               </Link>
             </div>
@@ -69,7 +69,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="relative overflow-hidden rounded-[2.5rem] border border-white/70 bg-gradient-to-br from-brand-50 via-cream to-white p-4 shadow-soft sm:p-6">
+          <div className="relative overflow-hidden rounded-[2.5rem] border border-white/70 bg-gradient-to-br from-brand-50 via-surface to-white p-4 shadow-soft sm:p-6">
             <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white to-transparent" />
             <Image src={heroImage} alt="Visuel boutique MEL'S" className="h-[360px] w-full rounded-[2rem] object-cover sm:h-[420px] lg:h-[560px]" priority />
             <div className="absolute left-4 top-4 rounded-3xl bg-white/90 px-4 py-3 shadow-soft sm:left-6 sm:top-6 sm:px-5 sm:py-4">
@@ -92,7 +92,7 @@ export default function HomePage() {
             </div>
             <div className="grid gap-5 sm:grid-cols-2 lg:col-span-2">
               {featuredProducts.map((item) => (
-                <article key={item.name} className="rounded-[1.8rem] border border-slate-200 bg-slate-50/70 p-6">
+                <article key={item.name} className="rounded-[1.8rem] border border-brand-100 bg-surface p-6 shadow-sm">
                   <p className="text-sm font-semibold uppercase tracking-[0.22em] text-brand-600">{item.tag}</p>
                   <h3 className="mt-4 text-lg font-semibold text-slate-950">{item.name}</h3>
                   <p className="mt-3 text-base text-slate-600">{item.category}</p>

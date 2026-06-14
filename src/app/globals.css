@@ -38,7 +38,7 @@ select {
 }
 
 a {
-  color: inherit;
+  color: #7c2d27; /* brand-700 to match logo */
   text-decoration: none;
 }
 

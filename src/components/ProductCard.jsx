@@ -1,10 +1,15 @@
+"use client"
+
 import Link from 'next/link'
+import { useState } from 'react'
 import { formatPrice } from '../lib/shop-data'
 
 export default function ProductCard({ product }) {
+  const [fav, setFav] = useState(false)
+
   return (
-    <article className="group rounded-[2rem] border border-slate-200 bg-white/90 p-6 shadow-soft transition hover:-translate-y-1 hover:border-brand-300">
-      <div className={`aspect-square w-full rounded-[1.8rem] ${product.accent} p-6`}>
+    <article className="group relative rounded-[2rem] border border-slate-200 bg-white/90 p-6 shadow-soft transition hover:-translate-y-1 hover:border-brand-300">
+      <div className={`relative aspect-square w-full rounded-[1.8rem] ${product.accent} p-6`}>
         <div className="flex h-full items-end justify-between">
           <div>
             <p className="text-xs uppercase tracking-[0.28em] text-brand-500">{product.tag}</p>
@@ -13,6 +18,17 @@ export default function ProductCard({ product }) {
             {product.category}
           </span>
         </div>
+
+        <button
+          type="button"
+          aria-pressed={fav}
+          onClick={() => setFav((s) => !s)}
+          className={`absolute right-3 top-3 inline-flex items-center justify-center rounded-full p-2 transition-shadow ${fav ? 'bg-brand-500 text-white shadow-lg' : 'bg-white/90 text-brand-700 border border-slate-200'}`}
+        >
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" aria-hidden>
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill={fav ? 'currentColor' : 'none'} />
+          </svg>
+        </button>
       </div>
       <div className="mt-6 space-y-4">
         <div>

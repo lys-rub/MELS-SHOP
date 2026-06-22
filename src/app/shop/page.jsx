@@ -21,7 +21,7 @@ export default function ShopPage() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 grid gap-8 lg:grid-cols-[1.25fr_0.75fr] lg:items-end">
           <div>
-            <p className="text-sm uppercase tracking-[0.3em] text-brand-600">Boutique</p>
+            <p className="text-sm uppercase tracking-[0.3em] text-gold-700">Boutique</p>
             <h1 className="mt-4 max-w-2xl text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
               Parcourez une sélection raffinée de mode, beauté et accessoires.
             </h1>
@@ -30,8 +30,8 @@ export default function ShopPage() {
             </p>
           </div>
 
-            <div className="rounded-[2rem] border border-brand-100 bg-surface p-8 shadow-soft">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">Trouvez votre nouvelle pièce</p>
+            <div className="rounded-[2rem] border border-gold-100 bg-surface p-8 shadow-soft">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-gold-700">Trouvez votre nouvelle pièce</p>
             <div className="mt-6 space-y-4">
               <label className="block text-sm font-medium text-slate-700">Rechercher</label>
               <input
@@ -39,7 +39,7 @@ export default function ShopPage() {
                 value={search}
                 onChange={(event) => setSearch(event.target.value)}
                 placeholder="Nom de produit ou catégorie"
-                className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-brand-400 focus:ring-2 focus:ring-brand-100"
+                className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-gold-400 focus:ring-2 focus:ring-gold-100"
               />
               <div>
                 <p className="text-sm font-medium text-slate-700">Catégorie</p>
@@ -51,8 +51,8 @@ export default function ShopPage() {
                       onClick={() => setSelectedCategory(category)}
                       className={`rounded-full border px-4 py-2 text-sm font-medium transition ${
                         selectedCategory === category
-                          ? 'border-brand-600 bg-brand-50 text-brand-700'
-                          : 'border-slate-200 bg-white text-slate-600 hover:border-brand-300'
+                          ? 'border-gold-600 bg-gold-50 text-gold-700'
+                          : 'border-slate-200 bg-white text-slate-600 hover:border-gold-300'
                       }`}
                     >
                       {category}
@@ -71,7 +71,7 @@ export default function ShopPage() {
         </div>
 
         {filteredProducts.length === 0 && (
-          <p className="mt-12 rounded-[1.8rem] border border-brand-200 bg-brand-50/80 p-8 text-center text-lg font-medium text-slate-700">
+          <p className="mt-12 rounded-[1.8rem] border border-gold-200 bg-gold-50/80 p-8 text-center text-lg font-medium text-slate-700">
             Aucun produit ne correspond à votre recherche. Essayez une autre catégorie ou un autre mot-clé.
           </p>
         )}

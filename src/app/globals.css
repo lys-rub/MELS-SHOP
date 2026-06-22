@@ -43,7 +43,7 @@ a {
 }
 
 ::selection {
-  background: rgba(200, 79, 66, 0.15);
+  background: rgba(199, 137, 36, 0.18);
 }
 
 @layer components {
@@ -53,5 +53,9 @@ a {
 
   .brand-button {
     @apply inline-flex items-center justify-center rounded-full border border-brand-500 bg-brand-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-600;
+  }
+
+  .gold-button {
+    @apply inline-flex items-center justify-center rounded-full border border-gold-400 bg-gold-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-gold-600;
   }
 }

@@ -6,7 +6,7 @@ export default function AboutPage() {
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <div className="grid gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
           <div>
-            <p className="text-sm uppercase tracking-[0.3em] text-brand-500">À propos</p>
+            <p className="text-sm uppercase tracking-[0.3em] text-gold-700">À propos</p>
             <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
               Une boutique locale pensée comme une grande expérience e-commerce.
             </h1>
@@ -16,7 +16,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="rounded-[2rem] border border-slate-200 bg-brand-50/80 p-8 shadow-soft">
+          <div className="rounded-[2rem] border border-gold-100 bg-gold-50/80 p-8 shadow-soft">
             <h2 className="text-2xl font-semibold text-slate-950">Notre promesse</h2>
             <p className="mt-4 text-base leading-7 text-slate-600">
               Une expérience simple, élégante et inspirante : navigation fluide, conseils clairs, et service client dédié.
@@ -30,7 +30,7 @@ export default function AboutPage() {
         </div>
 
         <div className="mt-16 space-y-8">
-          <p className="text-sm uppercase tracking-[0.3em] text-brand-500">Témoignages</p>
+          <p className="text-sm uppercase tracking-[0.3em] text-gold-700">Témoignages</p>
           <div className="grid gap-6 md:grid-cols-3">
             {reviews.map((review) => (
               <blockquote key={review.author} className="glass-card p-8">

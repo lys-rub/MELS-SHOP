@@ -2,6 +2,28 @@ export const categories = ['Tous', 'Parfums', 'Vêtements', 'Chaussures', 'Acces
 
 export const products = [
   {
+    id: 'parfums-mels',
+    name: "Parfums MEL'S",
+    category: 'Parfums',
+    price: 72000,
+    tag: 'Collection',
+    rating: 4.9,
+    description: "Sélection de parfums signature MEL'S — notes raffinées et tenue longue durée.",
+    details: ['Notes de tête florales', 'Accords chauds de fond', 'Flacon premium'],
+    availability: 'En stock',
+    stock: 30,
+    images: [
+      '/images/parfums-1.jpg',
+      '/images/parfums-2.jpg',
+      '/images/parfums-3.jpg',
+    ],
+    accent: 'bg-[#f5e6dc]',
+    reviews: [
+      { author: 'Client A', rating: 5, feedback: 'Parfums exquis, tenue remarquable.' },
+      { author: 'Client B', rating: 5, feedback: 'Flacons très élégants et senteurs variées.' },
+    ],
+  },
+  {
     id: 'robe-satin-elegante',
     name: 'Robe satin élégante',
     category: 'Vêtements',
